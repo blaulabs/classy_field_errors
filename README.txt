@@ -11,8 +11,5 @@ This works on input, textarea and select elements.
     
 
 HOW TO USE:
-  - script/plugin install 
+  - script/plugin install git://github.com/xing/classy_field_errors.git
   - Put the css contained in field_error_proc.css in your base css file
-  (You don't need the test file)
-  
-And your done, you may need to restart your server to have the changes take effect.
