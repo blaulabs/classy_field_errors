@@ -1,7 +1,7 @@
 module FieldErrorProcHelper
   
-  def add_css_class_to_element(css_class, html_element)
-    HtmlElement.add_css_class(css_class, html_element)
+  def self.add_css_class_to_element(css_class, html_element)
+    FieldErrorProcHelper::HtmlElement.add_css_class(css_class, html_element)
   end
   
   class HtmlElement

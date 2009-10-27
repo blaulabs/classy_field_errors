@@ -11,8 +11,7 @@ This works on input, textarea and select elements.
     
 
 HOW TO USE:
-  - Put field_error_proc.rb in config/initializers
-  - Put field_error_proc_helper.rb in lib
+  - script/plugin install 
   - Put the css contained in field_error_proc.css in your base css file
   (You don't need the test file)
   
