@@ -1,0 +1,8 @@
+select.input-error,
+input.input-error,
+textarea.input-error {
+  border-top: 2px solid #BC100E;
+  border-left: 2px solid #BC100E;
+  border-bottom: 1px solid #FE9999;
+  border-right: 1px solid #FE9999;
+}
