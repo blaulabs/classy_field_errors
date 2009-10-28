@@ -26,10 +26,10 @@ Longer explanation and context for this plugin here: {Making Errors Look Good}[h
 
 ==Contributors
 
-{Mark Schuette}[http://github.com/m0rk] 
+{Mark Schuette}[http://github.com/m0rk],
 {Sebastian Roebke}[http://github.com/boosty], 
 {Ladislav Martincik}[http://github.com/lacomartincik],
-{Hendrik Mans}[http://github.com/hmans],
+{Hendrik Mans}[http://github.com/hmans]
 and {Tim Payton}[http://github.com/dizzy42]
 
 
