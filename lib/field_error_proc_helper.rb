@@ -42,7 +42,7 @@ module FieldErrorProcHelper
       end
 
       def match_form_element
-        @match_form_element ||= /<(input|textarea|select)/.match(@html_element)
+        @match_form_element ||= /<(input|textarea|select|label)/.match(@html_element)
       end
 
       def match_class_attribute
