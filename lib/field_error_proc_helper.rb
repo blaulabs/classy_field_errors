@@ -1,5 +1,12 @@
 module FieldErrorProcHelper
-  
+
+  TARGET_ELEMENTS = [
+    'input',
+    'textarea',
+    'select',
+    'label'
+  ]
+
   def self.add_css_class_to_element(css_class, html_element)
     FieldErrorProcHelper::HtmlElement.add_css_class(css_class, html_element)
   end
@@ -42,13 +49,17 @@ module FieldErrorProcHelper
       end
 
       def match_form_element
-        @match_form_element ||= /<(input|textarea|select|label)/.match(@html_element)
+        @match_form_element ||= /<(#{target_elements})/.match(@html_element)
       end
 
       def match_class_attribute
-        @match_class_attribute ||= /<[^>]+(class=['"])/.match(@html_element)
+        @match_class_attribute ||= /<(?:#{target_elements})[^>]+(class=['"])/.match(@html_element)
       end
-    
+
+      def target_elements
+        TARGET_ELEMENTS.join("|")
+      end
+
   end
   
 end

@@ -26,6 +26,12 @@ class FieldErrorProcHelperTest <  Test::Unit::TestCase
       FieldErrorProcHelper.add_css_class_to_element("input_error", "<textarea class=\"test\">Test</textarea>")
   end
 
+  test "should return tag with input_error class for label with a tag" do
+    input = "<label>a <a class=\"a\">b</a></label>"
+    assert_equal '<label class="input_error">a <a class="a">b</a></label>',
+      FieldErrorProcHelper.add_css_class_to_element("input_error", input)
+  end
+
   test "should return tag with input_error class for select" do
     assert_equal "<select class=\"input_error test\">Test</select>", 
       FieldErrorProcHelper.add_css_class_to_element("input_error", "<select class=\"test\">Test</select>")
